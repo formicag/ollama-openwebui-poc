@@ -1,6 +1,8 @@
 # Ollama + Open WebUI PoC
 
-Minimal setup to run [Open WebUI](https://github.com/open-webui/open-webui) connected to a local [Ollama](https://ollama.ai) instance on macOS.
+[![GitHub](https://img.shields.io/badge/GitHub-formicag%2Follama--openwebui--poc-181717?logo=github)](https://github.com/formicag/ollama-openwebui-poc)
+
+Minimal production-ready setup to run [Open WebUI](https://github.com/open-webui/open-webui) connected to a local [Ollama](https://ollama.ai) instance on macOS.
 
 ## Prerequisites
 
@@ -112,5 +114,15 @@ make up
 ## Security Notes
 
 - Ollama is not exposed to the network (only accessible from Docker via `host.docker.internal`)
-- Open WebUI is exposed on `localhost:3000` only
+- Open WebUI is exposed on `localhost:3000` only (not externally accessible)
 - First user to sign up becomes admin
+- No secrets or credentials stored in repository
+- Telemetry disabled by default
+
+## License
+
+MIT
+
+## Author
+
+[Gianluca Formica](https://github.com/formicag)
