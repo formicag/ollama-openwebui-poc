@@ -19,6 +19,25 @@ ollama pull llama3.1:8b  # Pull a model
 
 ## Quick Start
 
+### Option 1: Desktop Launcher (Recommended)
+
+Double-click **"Open WebUI.command"** on your Desktop.
+
+This automatically:
+- Starts Ollama (if not running)
+- Starts Docker Desktop (if not running)
+- Launches Open WebUI container
+- Opens http://localhost:3000 in your browser
+
+> **Note:** First time macOS may ask to allow the script. Right-click > Open > Open to allow.
+
+To install the launcher (creates a symlink on Desktop):
+```bash
+ln -sf "$(pwd)/Open WebUI.command" ~/Desktop/"Open WebUI.command"
+```
+
+### Option 2: Command Line
+
 ```bash
 make up      # Start Open WebUI
 make smoke   # Verify everything is working
